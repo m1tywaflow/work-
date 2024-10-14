@@ -1,0 +1,366 @@
+* {
+  box-sizing: border-box;
+}
+html:not(.touch-screen)::-webkit-scrollbar,
+html:not(.touch-screen) *::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+html:not(.touch-screen)::-webkit-scrollbar-track,
+html:not(.touch-screen) *::-webkit-scrollbar-track {
+  background-color: #e1e1e1;
+}
+html:not(.touch-screen)::-webkit-scrollbar-thumb,
+html:not(.touch-screen) *::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+body {
+  font-family: Poppins;
+  margin: 0;
+}
+.head-container {
+  padding: 46px 26px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: black;
+  padding: 20px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
+}
+.shoppy {
+  background-color: black;
+  width: 162px;
+  height: 60px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+.text-one {
+  color: #fff;
+  font-size: 16px;
+  line-height: 60px;
+}
+.right-side {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+.search {
+  border: none;
+  cursor: pointer;
+}
+.search img {
+  width: 92%;
+}
+.bag {
+  border: none;
+  cursor: pointer;
+}
+.bag img {
+  width: 92%;
+}
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 24px;
+}
+
+.image-shoes {
+  position: relative;
+  width: 600px;
+}
+
+.shoe {
+  position: absolute;
+}
+
+.shoe-left {
+  margin-left: -84%;
+  width: 100%;
+  height: 90%;
+  margin-top: 104px;
+  /* margin-top: 84px; */
+}
+
+.shoe-right {
+  margin-left: 16%;
+  width: 63%;
+  height: 72%;
+  margin-top: 24px;
+}
+.text {
+  margin-top: 270px;
+  max-width: 300px;
+}
+.text h1 {
+  line-height: 60px;
+  font-size: 60px;
+  letter-spacing: -3px;
+  font-family: Montserrat;
+  font-weight: 800;
+}
+.text p {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  width: 85%;
+  font-weight: 500;
+}
+.shop-now {
+  color: white;
+  background-color: black;
+  border-radius: 15px 15px;
+  font-weight: 500;
+  width: 68%;
+  height: 56px;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: Montserrat;
+  padding-right: 44px;
+  cursor: pointer;
+}
+.shop-now:hover span {
+  transform: scale(1.2);
+}
+.shop-now span {
+  display: inline-block;
+  position: relative;
+  transition: transform 0.4s ease;
+}
+.shop-now::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+}
+
+.container2 {
+  display: flex;
+  padding-left: 24px;
+  position: relative;
+  margin-top: 144px;
+  gap: 16px;
+}
+.img-sho {
+  position: relative;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.women-shoes,
+.men-shoes {
+  position: relative;
+}
+.women-shoes h2 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  font-family: Montserrat;
+  position: absolute;
+  padding-left: 10px;
+}
+.men-shoes h2 {
+  color: #fff;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 800;
+  font-family: Montserrat;
+  position: absolute;
+  padding-left: 10px;
+}
+.link {
+  position: absolute;
+  bottom: 20px;
+  text-decoration: none;
+  z-index: 1;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  font-family: Poppins;
+}
+.link-black {
+  right: 46px;
+  color: black;
+}
+.link-white {
+  left: 46px;
+  color: #fff;
+}
+.releases {
+  margin-top: 62px;
+  padding: 0 24px;
+}
+.releases h1 {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: Montserrat;
+}
+.container3 {
+  display: flex;
+  gap: 34px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: auto;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.name {
+  margin-top: 4px;
+}
+.price {
+  margin-top: -10px;
+}
+.product {
+  position: relative;
+  width: 100%;
+  min-width: 300px;
+}
+.prod-img {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 85%;
+  margin-bottom: 4px;
+}
+.prod-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.container4 {
+  display: flex;
+  gap: 34px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: auto;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.top-kicks {
+  margin-top: 30px;
+  padding: 0 24px;
+}
+.top-kicks h1 {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 40px;
+  font-family: Montserrat;
+}
+.info {
+  margin-top: 160px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.text-info {
+  text-align: center;
+  width: 254px;
+}
+.text-info h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+.text-info p {
+  margin: 10px 0 20px 0;
+  font-size: 1rem;
+}
+.join-btn {
+  padding: 10px 20px;
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.join-btn:hover {
+  /* background-color: #f0eaff; */
+  background-color: black;
+  color: white;
+  border: 2px solid whitesmoke;
+}
+footer {
+  background-color: black;
+  height: 290px;
+  padding: 40px 0;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+  margin-left: 40px;
+}
+.footer-section {
+  flex: 1;
+}
+.footer-section h4 {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #c4c4c4;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 25px;
+}
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+.social-media {
+  display: flex;
+  gap: 10px;
+}
+.icons {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+.icons img{
+  padding: 8px 0 0 1px;
+}
+.icons:hover{
+  background-color: pink;
+}
+.footer-bottom{
+  color:#FFFFFF;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 12px;
+  line-height: 25px;
+  font-weight: 500;
+}
