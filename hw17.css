@@ -364,3 +364,106 @@ footer {
   line-height: 25px;
   font-weight: 500;
 }
+@media (max-width: 390px) {
+  body {
+    height: 60%;
+    margin: 0 auto;
+    overflow-x: hidden;
+  }
+  .shoppy-mobile {
+    display: inline-block;
+  }
+  .burger {
+    display: inline-block;
+    background-color: transparent;
+  }
+  .main-nav {
+    display: none;
+  }
+  .right-side {
+    gap: 14px;
+  }
+  .head-container {
+    padding: 40px 30px 0 30px;
+  }
+  .search {
+    padding: 0;
+  }
+  .shoppy-mobile {
+    margin-left: 0;
+  }
+  .image-shoes {
+    bottom: 136px;
+  }
+  .shoe-left {
+    top: 30px;
+    transform: rotate(12deg);
+    right: 162px;
+    width: 126%;
+    height: 40%;
+  }
+  .shoe-right {
+    width: 120%;
+    height: 41%;
+    top: 182px;
+    left: -33px;
+    transform: rotate(-24deg);
+  }
+  .text > h1 {
+    text-align: center;
+    font-size: 48px;
+    font-weight: 800;
+    margin-top: 79%;
+    position: relative;
+    left: 82px;
+    width: 126%;
+  }
+  .text > p {
+    text-align: center;
+    left: 60px;
+    position: relative;
+    width: 160%;
+  }
+  .main-container {
+    padding: 0;
+  }
+  .shop-now {
+    width: 126%;
+    left: 84px;
+    position: relative;
+  }
+  .container2 {
+    margin-top: 40px;
+    display: block;
+  }
+  .women-shoes img {
+    width: 105%;
+  }
+  .women-shoes h2 {
+    font-size: 30px;
+  }
+  footer {
+    height: 640px;
+  }
+  .footer-container {
+    margin-left: 24px;
+    display: grid;
+    column-gap: 100px;
+    grid-template-columns: 105px 120px;
+  }
+  .footer-section {
+    display: grid;
+    column-gap: 100px;
+  }
+  .social-media {
+    display: flex;
+  }
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .icons img {
+    padding: 0;
+  }
+}
